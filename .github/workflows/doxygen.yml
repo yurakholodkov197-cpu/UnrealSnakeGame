@@ -50,12 +50,12 @@ jobs:
         run: ${{ env.DOXYGEN_EXE_PATH }} ${{ github.workspace }}\devops_data\Doxyfile
         
       - name: Upload Docs
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: Documentation\html
         
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v4
         
       - name: Deploy To GitHub Pages
         id: deployment
