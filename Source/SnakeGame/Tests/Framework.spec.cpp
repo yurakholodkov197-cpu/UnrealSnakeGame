@@ -16,7 +16,7 @@ END_DEFINE_SPEC(FSnakeFramework)
 void FSnakeFramework::Define()
 {
     using namespace LifeExe::Test;
-    
+
     Describe("Framework", [this]() { //
         BeforeEach([this]()
         {
