@@ -26,6 +26,11 @@ protected:
 public:
     virtual void Tick(float DeltaTime) override;
 
+    /**
+     * Set core model to be observed by the grid world actor
+     * @param Grid  model object
+     * @param CellSize  world size of the cell
+     */
     void SetModel(const TSharedPtr<Snake::Grid>& Grid, int32 CellSize);
 
 private:
